@@ -20,3 +20,6 @@ SELECT Departments.DepartmentNames, Courses.CourseName, Lecturers_Info.LecturerF
 FROM Departments
 INNER JOIN Courses
 ON Departments.Department_id = Courses.Department_id;
+
+#Fifth Query
+SELECT * FROM Courses WHERE CourseName LIKE 's%';
