@@ -13,3 +13,10 @@ WHERE Lecturer_id = 2;
 #Third Query
 
 DELETE FROM Courses WHERE CourseTitle='Introduction to Version Control' AND CourseUnit=3;
+
+#Fourth Query
+
+SELECT Departments.DepartmentNames, Courses.CourseName, Lecturers_Info.LecturerFirstName
+FROM Departments
+INNER JOIN Courses
+ON Departments.Department_id = Courses.Department_id;
